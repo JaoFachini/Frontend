@@ -16,7 +16,9 @@ body {
 }
 
 h1 {
-    color: #e74c3c;
+    color: blue; /* Título com a cor azul */
+    font-size: 2em; /* Ajuste no tamanho da fonte para dar mais destaque */
+    margin-bottom: 20px;
 }
 
 ul {

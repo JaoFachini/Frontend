@@ -23,3 +23,20 @@ document.getElementById("adicionar-esporte").addEventListener("click", function(
         alert("Digite um esporte antes de adicionar!");
     }
 });
+
+// Alterando o título e a cor do título
+document.getElementById("titulo").textContent = "Meus Esportes Favoritos";
+document.getElementById("titulo").style.color = "blue";
+
+// Adicionando dois novos esportes à lista
+let lista = document.getElementById("lista-esportes");
+
+let novoEsporte1 = document.createElement("li");
+novoEsporte1.className = "esporte";
+novoEsporte1.textContent = "🏸 Badminton";
+lista.appendChild(novoEsporte1);
+
+let novoEsporte2 = document.createElement("li");
+novoEsporte2.className = "esporte";
+novoEsporte2.textContent = "🤾‍♂️ Handebol";
+lista.appendChild(novoEsporte2);
