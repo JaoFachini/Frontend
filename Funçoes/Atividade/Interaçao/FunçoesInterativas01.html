@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Interativas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #paragrafo {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Funções Interativas</h1>
+
+    <p id="paragrafo">Texto original do parágrafo.</p>
+
+    <button onclick="alterarTexto()">Alterar Texto</button>
+    <button onclick="alterarFonte()">Alterar Fonte</button>
+    <button onclick="mudarCorFundo()">Mudar Cor de Fundo</button>
+    <button onclick="mostrarAlerta()">Exibir Alerta</button>
+    <button onclick="restaurar()">Restaurar</button>
+
+    <script>
+        function alterarTexto() {
+            document.getElementById("paragrafo").innerText = "O texto foi alterado!";
+        }
+
+        function alterarFonte() {
+            document.getElementById("paragrafo").style.fontSize = "24px";
+            document.getElementById("paragrafo").style.fontFamily = "Courier New";
+        }
+
+        function mudarCorFundo() {
+            document.body.style.backgroundColor = "#FFD700"; // amarelo
+        }
+
+        function mostrarAlerta() {
+            alert("Você clicou no botão de alerta!");
+        }
+
+        function restaurar() {
+            document.getElementById("paragrafo").innerText = "Texto original do parágrafo.";
+            document.getElementById("paragrafo").style.fontSize = "16px";
+            document.getElementById("paragrafo").style.fontFamily = "Arial";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+</body>
+</html>
